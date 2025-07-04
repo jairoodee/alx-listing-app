@@ -3,6 +3,8 @@
 A modern Airbnb-style listing application built using **Next.js** and **TailwindCSS**.  
 This project is part of the ALX Software Engineering learning journey and is designed to demonstrate full-stack development skills through a responsive and dynamic accommodation listing interface.
 
+---
+
 ## 🚀 Project Goals
 
 The **ALX Listing App** replicates core features of a typical Airbnb listing page, including:
@@ -12,23 +14,34 @@ The **ALX Listing App** replicates core features of a typical Airbnb listing pag
 - Modular structure for maintainability
 - Optimized static assets and efficient client-side rendering
 
+---
+
 ## 📁 Project Structure
 
-Here's a high-level breakdown of the key directories:
+Here's a high-level breakdown of the key directories and some notable files:
 
 ```
 
 .
-├── components/        # Reusable UI elements (e.g., Navbar, Cards, Buttons)
-├── interfaces/        # TypeScript interfaces and types for props, data models, etc.
-├── constants/         # Static values (e.g., filter options, location data)
-├── public/assets/     # Static images, icons, and other media files
-├── pages/             # Next.js pages and route handlers
-└── styles/            # Global styles and Tailwind config files
+├── components/
+│   └── common/
+│       ├── Card.tsx       # Reusable Card component for displaying property details
+│       └── Button.tsx     # Reusable Button component for user actions like “Book Now”
+│
+├── interfaces/
+│   └── index.ts           # Centralized file to define and export all TypeScript interfaces
+│                          # Includes: CardProps, ButtonProps, and more as needed
+│
+├── constants/
+│   └── index.ts           # Stores reusable values such as API URLs, UI labels, configs
+│
+├── public/assets/         # Static media (e.g., images, icons)
+├── pages/                 # Next.js pages and route entry points
+├── styles/                # TailwindCSS setup and global styles
 
 ````
 
-Each directory serves a clear and distinct purpose to support modularity and readability in the codebase.
+---
 
 ## 🛠️ Getting Started
 
@@ -43,7 +56,7 @@ cd alx-listing-app
 
 ### 2. Install Dependencies
 
-Make sure you have [Node.js](https://nodejs.org/) installed, then run:
+Ensure [Node.js](https://nodejs.org/) is installed, then run:
 
 ```bash
 npm install
@@ -55,11 +68,21 @@ npm install
 npm run dev
 ```
 
-The app will be available at `http://localhost:3000`
+Visit `http://localhost:3000` to view the application in your browser.
+
+---
 
 ## 🧱 Built With
 
 * **Next.js** – React framework for production
-* **TailwindCSS** – Utility-first CSS for rapid UI development
-* **TypeScript** – Type safety across the app
+* **TailwindCSS** – Utility-first CSS framework
+* **TypeScript** – Strong typing and interface-based architecture
 
+---
+
+## 📌 Notes
+
+* `components/common/Card.tsx`: Defines a reusable `Card` component used throughout the app to display property details like title, image, price, etc.
+* `components/common/Button.tsx`: Defines a reusable `Button` component used for actions such as “Book Now,” “See Details,” and navigation.
+* `interfaces/index.ts`: Contains all TypeScript interface definitions for the app. It starts with `CardProps` and `ButtonProps` for type safety and component clarity.
+* `constants/index.ts`: A centralized location for constants like API endpoints, default values, and reusable UI strings.
