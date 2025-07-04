@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ALX Listing App
 
-## Getting Started
+A modern Airbnb-style listing application built using **Next.js** and **TailwindCSS**.  
+This project is part of the ALX Software Engineering learning journey and is designed to demonstrate full-stack development skills through a responsive and dynamic accommodation listing interface.
 
-First, run the development server:
+## 🚀 Project Goals
+
+The **ALX Listing App** replicates core features of a typical Airbnb listing page, including:
+- A responsive layout with TailwindCSS
+- Display of property listings
+- Reusable components for scalability
+- Modular structure for maintainability
+- Optimized static assets and efficient client-side rendering
+
+## 📁 Project Structure
+
+Here's a high-level breakdown of the key directories:
+
+```
+
+.
+├── components/        # Reusable UI elements (e.g., Navbar, Cards, Buttons)
+├── interfaces/        # TypeScript interfaces and types for props, data models, etc.
+├── constants/         # Static values (e.g., filter options, location data)
+├── public/assets/     # Static images, icons, and other media files
+├── pages/             # Next.js pages and route handlers
+└── styles/            # Global styles and Tailwind config files
+
+````
+
+Each directory serves a clear and distinct purpose to support modularity and readability in the codebase.
+
+## 🛠️ Getting Started
+
+To run the ALX Listing App locally, follow these steps:
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/alx-listing-app.git
+cd alx-listing-app
+````
+
+### 2. Install Dependencies
+
+Make sure you have [Node.js](https://nodejs.org/) installed, then run:
+
+```bash
+npm install
+```
+
+### 3. Run the Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The app will be available at `http://localhost:3000`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🧱 Built With
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* **Next.js** – React framework for production
+* **TailwindCSS** – Utility-first CSS for rapid UI development
+* **TypeScript** – Type safety across the app
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
